@@ -5,7 +5,7 @@ print("|                Bem Vindo               |")
 print("|                                        |")
 print("-"*42)
 #---------------------Funcões-------------------#
-def bubble_sorted():
+def bubble_sorted(array):
     n = int(input("Insere os numeros:"))
     if n in array: 
         array.append(n)
@@ -44,6 +44,7 @@ def inserted_sorted(array):
                 array[current_position] = array[current_position - 1]
                 current_position = current_position - 1
                 array[current_position] = current_value
+
 def select_position(array):
     current = len(array)
     for i in range(current):
